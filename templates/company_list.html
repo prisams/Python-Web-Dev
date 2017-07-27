@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+    <th>Company Name</th>
+    <th>Category</th>
+  </tr>
+  {% for row in rows %}
+    <tr>
+    <td>{{row.name}}</td>
+    <td>{{row.category}}</td>
+    </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>
